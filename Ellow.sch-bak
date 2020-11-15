@@ -1,0 +1,27 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ELLOW:E73-2G4M08S1C U?
+U 1 1 5FB19DE7
+P 2600 5800
+F 0 "U?" H 2675 4677 50  0000 C CNN
+F 1 "E73-2G4M08S1C" H 2675 4586 50  0000 C CNN
+F 2 "" H 2750 4700 50  0001 C CNN
+F 3 "" H 2750 4700 50  0001 C CNN
+	1    2600 5800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

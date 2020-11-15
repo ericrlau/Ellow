@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ELLOW)(type Legacy)(uri ${KIPRJMOD}/ELLOW.lib)(options "")(descr ""))
+)
