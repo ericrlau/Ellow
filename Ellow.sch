@@ -1121,7 +1121,7 @@ L Device:C_Small C?
 U 1 1 5FC92F52
 P 3700 1800
 F 0 "C?" V 3471 1800 50  0000 C CNN
-F 1 "10uF" V 3562 1800 50  0000 C CNN
+F 1 "4.7uF" V 3562 1800 50  0000 C CNN
 F 2 "" H 3700 1800 50  0001 C CNN
 F 3 "~" H 3700 1800 50  0001 C CNN
 	1    3700 1800
@@ -1285,17 +1285,6 @@ Wire Wire Line
 	3200 2750 3200 2850
 $Comp
 L Device:R_Small R?
-U 1 1 5FD9AAA4
-P 5300 900
-F 0 "R?" H 5359 946 50  0000 L CNN
-F 1 "5.1k" H 5359 855 50  0000 L CNN
-F 2 "" H 5300 900 50  0001 C CNN
-F 3 "~" H 5300 900 50  0001 C CNN
-	1    5300 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5FDA8766
 P 2200 1600
 F 0 "R?" V 2250 1650 50  0000 L CNN
@@ -1352,50 +1341,44 @@ $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5FDDABC3
-P -700 3950
-F 0 "Q?" H -495 3996 50  0000 L CNN
-F 1 "A03407" H -495 3905 50  0000 L CNN
-F 2 "" H -500 4050 50  0001 C CNN
-F 3 "~" H -700 3950 50  0001 C CNN
-	1    -700 3950
+P -700 3850
+F 0 "Q?" H -495 3896 50  0000 L CNN
+F 1 "A03407" H -495 3805 50  0000 L CNN
+F 2 "" H -500 3950 50  0001 C CNN
+F 3 "~" H -700 3850 50  0001 C CNN
+	1    -700 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel -1250 3950 0    50   Input ~ 0
+Text GLabel -1250 3850 0    50   Input ~ 0
 VBUS
 $Comp
 L Diode:1N5819 D?
 U 1 1 5FDE8A85
-P -1050 4250
-F 0 "D?" H -1050 4033 50  0000 C CNN
-F 1 "1N5819" H -1050 4124 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H -1050 4075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H -1050 4250 50  0001 C CNN
-	1    -1050 4250
+P -1050 4150
+F 0 "D?" H -1050 3933 50  0000 C CNN
+F 1 "1N5819" H -1050 4024 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H -1050 3975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H -1050 4150 50  0001 C CNN
+	1    -1050 4150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	-1250 3950 -1200 3950
+	-1250 3850 -1200 3850
 Wire Wire Line
-	-900 4250 -1200 4250
+	-1200 3850 -1200 4150
+Connection ~ -1200 3850
 Wire Wire Line
-	-1200 3950 -1200 4250
-Connection ~ -1200 3950
-Wire Wire Line
-	-1200 3950 -900 3950
-Connection ~ -1200 4250
-Wire Wire Line
-	-900 4250 -900 3950
-Connection ~ -900 4250
-Connection ~ -900 3950
+	-1200 3850 -900 3850
+Connection ~ -1200 4150
 $Comp
 L Device:R_Small R?
 U 1 1 5FE0E425
-P -1200 4550
-F 0 "R?" H -1141 4596 50  0000 L CNN
-F 1 "100k" H -1141 4505 50  0000 L CNN
-F 2 "" H -1200 4550 50  0001 C CNN
-F 3 "~" H -1200 4550 50  0001 C CNN
-	1    -1200 4550
+P -1200 4450
+F 0 "R?" H -1141 4496 50  0000 L CNN
+F 1 "100k" H -1141 4405 50  0000 L CNN
+F 2 "" H -1200 4450 50  0001 C CNN
+F 3 "~" H -1200 4450 50  0001 C CNN
+	1    -1200 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1422,22 +1405,20 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FE369DE
-P -1200 4800
-F 0 "#PWR?" H -1200 4550 50  0001 C CNN
-F 1 "GND" H -1195 4627 50  0000 C CNN
-F 2 "" H -1200 4800 50  0001 C CNN
-F 3 "" H -1200 4800 50  0001 C CNN
-	1    -1200 4800
+P -1200 4700
+F 0 "#PWR?" H -1200 4450 50  0001 C CNN
+F 1 "GND" H -1195 4527 50  0000 C CNN
+F 2 "" H -1200 4700 50  0001 C CNN
+F 3 "" H -1200 4700 50  0001 C CNN
+	1    -1200 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	-1200 4650 -1200 4800
+	-1200 4550 -1200 4700
 Wire Wire Line
-	-1200 4450 -1200 4250
+	-1200 4350 -1200 4150
 Text GLabel -600 3550 1    50   Input ~ 0
 VBAT
-Wire Wire Line
-	-600 3550 -600 3750
 Wire Wire Line
 	350  4500 350  4650
 Wire Wire Line
@@ -1445,4 +1426,126 @@ Wire Wire Line
 Connection ~ -50  4150
 Wire Wire Line
 	-50  4150 -50  4100
+Wire Wire Line
+	-600 4050 -600 4150
+Connection ~ -600 4150
+Wire Wire Line
+	-600 3550 -600 3650
+$Comp
+L Device:C_Small C?
+U 1 1 5FBDD976
+P -700 4450
+F 0 "C?" V -929 4450 50  0000 C CNN
+F 1 "4.7uF" V -838 4450 50  0000 C CNN
+F 2 "" H -700 4450 50  0001 C CNN
+F 3 "~" H -700 4450 50  0001 C CNN
+	1    -700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBE6A9A
+P -700 4700
+F 0 "#PWR?" H -700 4450 50  0001 C CNN
+F 1 "GND" H -695 4527 50  0000 C CNN
+F 2 "" H -700 4700 50  0001 C CNN
+F 3 "" H -700 4700 50  0001 C CNN
+	1    -700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-700 4550 -700 4700
+Wire Wire Line
+	-700 4350 -700 4150
+Wire Wire Line
+	-700 4150 -600 4150
+Wire Wire Line
+	-900 4150 -700 4150
+Connection ~ -700 4150
+$Comp
+L 686116183422:686116183422 J?
+U 1 1 5FC18475
+P 5050 6850
+F 0 "J?" H 4993 5783 50  0000 C CNN
+F 1 "686116183422" H 4993 5874 50  0000 C CNN
+F 2 "686116183422" H 5050 6850 50  0001 L BNN
+F 3 "" H 5050 6850 50  0001 L BNN
+	1    5050 6850
+	-1   0    0    1   
+$EndComp
+Text GLabel 5500 7550 2    50   Input ~ 0
+row4
+Text GLabel 5500 7450 2    50   Input ~ 0
+row3
+Text GLabel 5500 7350 2    50   Input ~ 0
+row2
+Text GLabel 5500 7250 2    50   Input ~ 0
+row1
+Text GLabel 5500 7150 2    50   Input ~ 0
+row0
+Text GLabel 5500 7050 2    50   Input ~ 0
+col5
+Text GLabel 5500 6950 2    50   Input ~ 0
+col4
+Text GLabel 5500 6850 2    50   Input ~ 0
+col3
+Text GLabel 5500 6750 2    50   Input ~ 0
+col2
+Text GLabel 5500 6650 2    50   Input ~ 0
+col1
+Text GLabel 5500 6550 2    50   Input ~ 0
+col0
+Text GLabel 5500 6450 2    50   Input ~ 0
+ENCODE_B
+Text GLabel 5500 6350 2    50   Input ~ 0
+ENCODE_A
+Text GLabel 5500 6050 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5500 6050 5350 6050
+Wire Wire Line
+	5500 6350 5350 6350
+Wire Wire Line
+	5500 6450 5350 6450
+Wire Wire Line
+	5500 6550 5350 6550
+Wire Wire Line
+	5500 6650 5350 6650
+Wire Wire Line
+	5500 6750 5350 6750
+Wire Wire Line
+	5500 6850 5350 6850
+Wire Wire Line
+	5500 6950 5350 6950
+Wire Wire Line
+	5500 7050 5350 7050
+Wire Wire Line
+	5500 7150 5350 7150
+Wire Wire Line
+	5500 7250 5350 7250
+Wire Wire Line
+	5500 7350 5350 7350
+Wire Wire Line
+	5500 7450 5350 7450
+Wire Wire Line
+	5500 7550 5350 7550
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5FCE772B
+P 6700 6100
+F 0 "J?" H 6728 6076 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6728 5985 50  0000 L CNN
+F 2 "" H 6700 6100 50  0001 C CNN
+F 3 "~" H 6700 6100 50  0001 C CNN
+	1    6700 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6400 6100 0    50   Input ~ 0
+VBAT
+Text GLabel 6400 6200 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6500 6200 6400 6200
+Wire Wire Line
+	6500 6100 6400 6100
 $EndSCHEMATC
