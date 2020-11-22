@@ -579,7 +579,7 @@ U 1 1 5FCE772B
 P 7400 6100
 F 0 "J3" H 7428 6076 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 7428 5985 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 7400 6100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7400 6100 50  0001 C CNN
 F 3 "~" H 7400 6100 50  0001 C CNN
 	1    7400 6100
 	1    0    0    -1  
@@ -728,19 +728,19 @@ Text GLabel 6650 3350 0    50   Input ~ 0
 P0.15
 Text GLabel 7150 3500 2    50   Input ~ 0
 P0.08
-Text GLabel 6650 4450 0    50   Input ~ 0
+Text GLabel 8900 2500 0    50   Input ~ 0
 GND
 Text GLabel 6650 3550 0    50   Input ~ 0
 GND
-Text GLabel 6650 4650 0    50   Input ~ 0
+Text GLabel 8900 2600 0    50   Input ~ 0
 VDD_H
-Text GLabel 7150 4600 2    50   Input ~ 0
+Text GLabel 8900 2700 0    50   Input ~ 0
 SWC
-Text GLabel 7150 4400 2    50   Input ~ 0
+Text GLabel 8900 2800 0    50   Input ~ 0
 SWD
-Text GLabel 7150 4200 2    50   Input ~ 0
+Text GLabel 8900 2100 0    50   Input ~ 0
 DATA+
-Text GLabel 6650 4250 0    50   Input ~ 0
+Text GLabel 8900 2200 0    50   Input ~ 0
 DATA-
 Text GLabel 3600 5500 2    50   Input ~ 0
 P0.31
@@ -796,4 +796,30 @@ Wire Wire Line
 	1750 6450 1800 6450
 Wire Wire Line
 	1750 6650 1800 6650
+$Comp
+L Connector:Conn_01x04_Female J5
+U 1 1 5FDB4AEC
+P 9100 2600
+F 0 "J5" H 9128 2576 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 9128 2485 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9100 2600 50  0001 C CNN
+F 3 "~" H 9100 2600 50  0001 C CNN
+	1    9100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5FDB58A8
+P 9100 2000
+F 0 "J4" H 9128 1976 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 9128 1885 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9100 2000 50  0001 C CNN
+F 3 "~" H 9100 2000 50  0001 C CNN
+	1    9100 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8900 1900 0    50   Input ~ 0
+GND
+Text GLabel 8900 2000 0    50   Input ~ 0
+VBUS
 $EndSCHEMATC
