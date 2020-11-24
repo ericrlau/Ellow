@@ -628,8 +628,6 @@ Text GLabel 7150 3000 2    50   Input ~ 0
 RESET
 Text GLabel 7150 1250 2    50   Input ~ 0
 EXT_VCC
-Text GLabel 6650 1750 0    50   Input ~ 0
-GND
 Text GLabel 6650 4650 0    50   Input ~ 0
 P1.06
 Text GLabel 7150 4600 2    50   Input ~ 0
