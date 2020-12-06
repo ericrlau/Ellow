@@ -611,17 +611,17 @@ Text GLabel 3600 5800 2    50   Input ~ 0
 P1.13
 Text GLabel 3600 5700 2    50   Input ~ 0
 P0.02
-Text GLabel 8550 2800 2    50   Input ~ 0
+Text GLabel 7550 3500 0    50   Input ~ 0
 RESET
-Text GLabel 8550 1000 2    50   Input ~ 0
-EXT_VCC
-Text GLabel 7550 4400 0    50   Input ~ 0
-P1.06
 Text GLabel 8550 4400 2    50   Input ~ 0
+EXT_VCC
+Text GLabel 8550 1400 2    50   Input ~ 0
+P1.06
+Text GLabel 7550 1000 0    50   Input ~ 0
 P0.10
-Text GLabel 8550 3600 2    50   Input ~ 0
+Text GLabel 7550 1800 0    50   Input ~ 0
 P0.24
-Text GLabel 7550 3200 0    50   Input ~ 0
+Text GLabel 8550 2700 2    50   Input ~ 0
 P0.17
 Text GLabel 9900 2100 0    50   Input ~ 0
 GND
@@ -690,15 +690,15 @@ F 3 "~" H 10100 2200 50  0001 C CNN
 	1    10100 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 7550 4000 0    50   Input ~ 0
+Text GLabel 8550 1800 2    50   Input ~ 0
 P1.02
-Text GLabel 7550 3800 0    50   Input ~ 0
+Text GLabel 8550 2000 2    50   Input ~ 0
 P1.00
-Text GLabel 7550 3600 0    50   Input ~ 0
+Text GLabel 8550 2300 2    50   Input ~ 0
 P0.22
-Text GLabel 8550 3400 2    50   Input ~ 0
+Text GLabel 7550 2000 0    50   Input ~ 0
 P0.13
-Text GLabel 7550 3000 0    50   Input ~ 0
+Text GLabel 8550 2900 2    50   Input ~ 0
 P0.15
 $Comp
 L Device:LED D3
@@ -741,13 +741,13 @@ Text GLabel 2250 4400 1    50   Input ~ 0
 P0.07
 Text GLabel 4250 4200 0    50   Input ~ 0
 P0.02
-Text GLabel 7550 3400 0    50   Input ~ 0
+Text GLabel 8550 2500 2    50   Input ~ 0
 P0.20
-Text GLabel 8550 4200 2    50   Input ~ 0
+Text GLabel 7550 1200 0    50   Input ~ 0
 P0.09
-Text GLabel 7550 4200 0    50   Input ~ 0
+Text GLabel 8550 1600 2    50   Input ~ 0
 P1.04
-Text GLabel 8550 1200 2    50   Input ~ 0
+Text GLabel 7550 4400 0    50   Input ~ 0
 GND
 Text GLabel 2750 4350 1    50   Input ~ 0
 P1.09
@@ -766,29 +766,25 @@ F 3 "~" H 9950 900 50  0001 C CNN
 	1    9950 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 7550 2800 0    50   Input ~ 0
+Text GLabel 8550 3100 2    50   Input ~ 0
 P0.07
-Text GLabel 7550 2600 0    50   Input ~ 0
+Text GLabel 8550 3300 2    50   Input ~ 0
 P0.12
-Text GLabel 7550 2400 0    50   Input ~ 0
+Text GLabel 8550 3500 2    50   Input ~ 0
 P0.04
-Text GLabel 7550 2100 0    50   Input ~ 0
+Text GLabel 8550 3700 2    50   Input ~ 0
 P0.08
-Text GLabel 7550 1900 0    50   Input ~ 0
+Text GLabel 8550 3900 2    50   Input ~ 0
 P0.06
-Text GLabel 7550 1700 0    50   Input ~ 0
+Text GLabel 8550 4100 2    50   Input ~ 0
 P0.26
 Text GLabel 3600 6200 2    50   Input ~ 0
 P1.10
-Text GLabel 8550 3800 2    50   Input ~ 0
+Text GLabel 7550 1600 0    50   Input ~ 0
 P1.10
-Text GLabel 8550 4000 2    50   Input ~ 0
-P1.11
-Text GLabel 8550 3200 2    50   Input ~ 0
-P0.03
-Text GLabel 8550 3000 2    50   Input ~ 0
+Text GLabel 7550 2300 0    50   Input ~ 0
 P0.28
-Text GLabel 8550 2600 2    50   Input ~ 0
+Text GLabel 7550 2500 0    50   Input ~ 0
 P0.02
 Text GLabel 4750 1550 2    50   Input ~ 0
 PROG
@@ -803,7 +799,7 @@ Connection ~ 4550 1350
 Text GLabel 10750 5550 2    50   Input ~ 0
 VDD_H
 $Comp
-L ELLOW:2199119-4 J2
+L Ellow-rescue:2199119-4-ELLOW J2
 U 1 1 5FC6B873
 P 8050 2800
 F 0 "J2" H 8050 4867 50  0000 C CNN
@@ -816,4 +812,30 @@ F 4 "2199119-4" H 8050 2800 50  0001 L BNN "Comment"
 $EndComp
 Text GLabel 7550 4600 0    50   Input ~ 0
 GND
+Text GLabel 7550 1400 0    50   Input ~ 0
+P1.11
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FCCB900
+P 6050 3300
+F 0 "SW1" H 6050 3585 50  0000 C CNN
+F 1 "SW_Push" H 6050 3494 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 6050 3500 50  0001 C CNN
+F 3 "~" H 6050 3500 50  0001 C CNN
+	1    6050 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 3300 0    50   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR0104
+U 1 1 5FCCE3C8
+P 6250 3300
+F 0 "#PWR0104" H 6250 3050 50  0001 C CNN
+F 1 "GND" H 6255 3127 50  0000 C CNN
+F 2 "" H 6250 3300 50  0001 C CNN
+F 3 "" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

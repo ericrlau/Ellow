@@ -1,0 +1,101 @@
+
+(rules PCB Ellow
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 251)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 250.2 (type default_Power))
+    (clear 50.0 (type smd_smd))
+    (clear 250.2 (type smd_Power))
+    (clear 250.2 (type "kicad_default"_Power))
+    (clear 250.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    "Net-(C1-Pad1)" "Net-(D2-Pad1)" "EXT_VCC_CONTROL" "Net-(J1-PadA5)" "Net-(J1-PadB5)" "BATTERY_MEASURE" "Net-(R6-Pad2)" "DATA-"
+    DATA+ SWC SWD RESET "Net-(U2-Pad11)" "Net-(U2-Pad13)" PROG "Net-(D3-Pad1)"
+    P0.02 P0.28 P1.11 P1.06 P0.10 P0.09 P0.24 P0.13
+    P0.20 P0.17 P0.15 P0.08 P0.22 P1.00 P1.02 P1.04
+    P0.06 P0.26 P0.12 P0.07 P0.04 P1.10
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND VBAT VBUS "EXT_VCC" "VDD_H"
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

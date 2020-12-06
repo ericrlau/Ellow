@@ -88,7 +88,7 @@
     (edit_net_rules
       not_visible
       (bounds
-        100 200 904 129
+        100 200 904 113
       )
     )
     (assign_net_rules
@@ -118,7 +118,7 @@
     (net_info
       not_visible
       (bounds
-        350 23 297 539
+        350 30 0 0
       )
     )
     (incompletes_info
